@@ -8,7 +8,7 @@ interface BenefitCardProps {
 
 const BenefitCard: React.FC<BenefitCardProps> = ({ icon, text }) => {
   return (
-    <div className="flex w-1/2 space-x-4">
+    <div className="flex w-full space-x-2 md:w-1/2 md:space-x-4">
       <div>
         {icon}
       </div>

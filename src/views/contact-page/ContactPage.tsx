@@ -1,20 +1,21 @@
-import HeroSection from "@/components/contact/HeroSection";
-import ContactSection from "@/components/contact/ContactSection";
-import MapSection from "@/components/contact/MapSection";
-import CenteredGrid from "@/components/contact/FaqSection";
-import FaqSection from "@/components/contact/FaqSection";
+import HeroSection from "@/components/contact/sections/HeroSection";
+import ContactSection from "@/components/contact/sections/ContactSection";
+import MapSection from "@/components/contact/sections/MapSection";
+import FaqSection from "@/components/contact/sections/FaqSection";
+import Footer from "@/components/footer/Footer";
 
 
 const ContactPage = () => {
 
     return (
         <>
-           <HeroSection />
-           <ContactSection />
-           <MapSection />
-           <FaqSection />
+            <HeroSection/>
+            <ContactSection/>
+            <MapSection/>
+            <FaqSection/>
+            <Footer/>
         </>
-    
+
     )
 
 }

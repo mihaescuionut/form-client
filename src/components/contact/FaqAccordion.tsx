@@ -3,7 +3,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "..
 const FaqAccordion = () => {
 
     return (
-        <Accordion type="single" collapsible className="w-2/3" value="item-2">  {/* Set the value to 'item-2' */}
+        <Accordion type="multiple" defaultValue={["item-2"]} className="w-full md:w-2/3">
             <AccordionItem value="item-1" className="border-disabled">
                 <AccordionTrigger className="text-primary text-xl capitalize">How long does it take?</AccordionTrigger>
                 <AccordionContent className="text-disabled">

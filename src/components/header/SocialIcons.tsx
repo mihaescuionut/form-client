@@ -1,25 +1,29 @@
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
-
-
-
+import {LinkedinIcon, TwitterIcon, FacebookIcon, InstagramIcon} from "@/assets/icons/index";
 
 const SocialIcons = () => {
 
     return (
+        <div className="flex justify-center items-center gap-2">
 
-    <div className="flex justify-center items-center gap-2">
-        <Linkedin className="bg-disabled rounded-lg p-1"/>
-        <Twitter className="bg-disabled rounded-lg p-1" />
-        <Facebook className="bg-disabled rounded-lg p-1"/>
-        <Instagram className="bg-disabled rounded-lg p-1"/>
-    </div>
+            <div className="bg-disabled rounded-full p-2">
+                <LinkedinIcon />
+            </div>
+
+            <div className="bg-disabled rounded-full p-2">
+                <TwitterIcon />
+            </div>
+
+            <div className="bg-disabled rounded-full p-2">
+                <FacebookIcon />
+            </div>
+
+            <div className="bg-disabled rounded-full p-2">
+                <InstagramIcon />
+            </div>
 
 
-
-
+        </div>
     )
-
-
 }
 
 export default SocialIcons;
