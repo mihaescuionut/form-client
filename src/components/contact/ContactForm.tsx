@@ -12,6 +12,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import {Loader2} from "lucide-react";
 import {FormData} from "@/lib/types";
+import Link from "next/link";
 
 
 const validationSchema = Yup.object({
@@ -118,7 +119,7 @@ const ContactForm = () => {
                         id="terms"
                     />
                     <label htmlFor="terms" className="text-white">
-                        Accept terms and conditions
+                        You agree to our friendly <Link href="/" className="underline">privacy policy</Link>
                     </label>
                 </div>
 
